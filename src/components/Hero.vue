@@ -11,11 +11,11 @@ const isShowing = ref(true)
     <div class="absolute inset-0 bg-no-repeat bg-cover bg-center opacity-25" style="background-image: url('hero-bg.jpg');" />
 
     <header class="px-10 h-32 flex items-center justify-between relative z-10">
-      <img src="logo.svg" class="w-36" />
-      <button class="border-teal-500 border px-6 py-2 text-teal-500 text-sm">Msg me</button>
+      <img src="logo.svg" class="w-32" />
+      <!-- <button class="border-teal-500 border px-6 py-2 text-teal-500 text-sm">Msg me</button> -->
     </header>
 
-    <div class="relative z-20 container mx-auto text-white space-y-12">
+    <div class="relative z-20 container mx-auto text-white space-y-12 p-6">
       <TransitionRoot
         appear
         :show="isShowing"
@@ -28,9 +28,8 @@ const isShowing = ref(true)
           leave-from="opacity-100"
           leave-to="opacity-0"
         >
-          <h1 class="font-bold text-6xl">
-            Software engineering
-            <span class="md:block">+ product design.</span>
+          <h1 class="font-bold text-2xl md:text-4xl max-w-xl">
+            Frontend software eng, musician and electronics enthusiast.
           </h1>
         </TransitionChild>
         <TransitionChild
@@ -46,23 +45,32 @@ const isShowing = ref(true)
           </p>
         </TransitionChild>
 
-        <TransitionChild
-          enter="transition-all duration-300 delay-300"
-          enter-from="opacity-0 translate-y-2"
-          enter-to="opacity-100 scale-100"
-          leave="transition-opacity duration-150"
-          leave-from="opacity-100"
-          leave-to="opacity-0"
-        >
-          <div class="mt-12 space-x-3">
-            <button class="w-56 py-4 bg-teal-500 border-teal-500 border-2">
-              See my recent work
-            </button>
-            <button class="w-56 py-4 border-teal-500 border-2">
-              About me
-            </button>
-          </div>
-        </TransitionChild>
+        <div class="mt-12">
+          <TransitionChild
+            enter="transition-all duration-300 delay-300"
+            enter-from="opacity-0 translate-y-2"
+            enter-to="opacity-100 scale-100"
+            leave="transition-opacity duration-150"
+            leave-from="opacity-100"
+            leave-to="opacity-0"
+          >
+            <h3 class="font-bold text-xl">Recent works</h3>
+            <div class="mt-6 flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-8">
+              <img src="logo-vetster.svg" class="w-40" />
+              <img src="logo-terminal.svg" class="w-40" />
+              <img src="logo-hove.svg" class="w-40" />
+            </div>
+            <!-- <div class="mt-12 space-x-3">
+              <button class="w-56 py-4 bg-teal-500 border-teal-500 border-2">
+                See my recent work
+              </button>
+              <button class="w-56 py-4 border-teal-500 border-2">
+                About me
+              </button>
+            </div> -->
+          </TransitionChild>
+
+        </div>
       </TransitionRoot>
     </div>
 

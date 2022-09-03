@@ -6,9 +6,9 @@ import RecentWork from './components/RecentWork.vue'
 <template>
   
   <Hero />
-  <RecentWork />
+  <!-- <RecentWork /> -->
 
-  <section class="bg-slate-800 py-24 text-white">
+  <!-- <section class="bg-slate-800 py-24 text-white">
     <div class="container mx-auto">
       <h2 class="text-2xl font-bold text-center">About me</h2>
       <div class="mt-16 grid gap-24 grid-cols-2">
@@ -28,5 +28,5 @@ import RecentWork from './components/RecentWork.vue'
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 </template>
