@@ -56,18 +56,10 @@ const isShowing = ref(true)
           >
             <h3 class="font-bold text-xl">Recent works</h3>
             <div class="mt-6 flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-8">
-              <img src="logo-vetster.svg" class="w-40" />
-              <img src="logo-terminal.svg" class="w-40" />
-              <img src="logo-hove.svg" class="w-40" />
+              <img src="../assets/logo-vetster.svg" class="w-40" />
+              <img src="../assets/logo-terminal.svg" class="w-40" />
+              <img src="../assets/logo-hove.svg" class="w-40" />
             </div>
-            <!-- <div class="mt-12 space-x-3">
-              <button class="w-56 py-4 bg-teal-500 border-teal-500 border-2">
-                See my recent work
-              </button>
-              <button class="w-56 py-4 border-teal-500 border-2">
-                About me
-              </button>
-            </div> -->
           </TransitionChild>
 
         </div>

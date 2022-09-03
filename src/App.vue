@@ -1,12 +1,9 @@
 <script setup>
 import Hero from './components/Hero.vue'
-import RecentWork from './components/RecentWork.vue'
 </script>
 
 <template>
-  
   <Hero />
-  <!-- <RecentWork /> -->
 
   <!-- <section class="bg-slate-800 py-24 text-white">
     <div class="container mx-auto">
