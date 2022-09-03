@@ -8,10 +8,10 @@ const isShowing = ref(true)
 <template>
   <section class="min-h-screen bg-slate-800 relative flex flex-col justify-between">
     <div class="absolute inset-0 bg-gradient-to-r from-slate-800 to-transparent z-10" />
-    <div class="absolute inset-0 bg-no-repeat bg-cover bg-center opacity-25" style="background-image: url('hero-bg.jpg');" />
+    <div class="absolute inset-0 bg-no-repeat bg-cover bg-center opacity-25" style="background-image: url('/hero-bg.jpg');" />
 
     <header class="px-10 h-32 flex items-center justify-between relative z-10">
-      <img src="logo.svg" class="w-32" />
+      <img src="/logo.svg" class="w-32" />
       <!-- <button class="border-teal-500 border px-6 py-2 text-teal-500 text-sm">Msg me</button> -->
     </header>
 
