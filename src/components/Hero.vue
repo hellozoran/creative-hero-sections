@@ -6,14 +6,27 @@ const isShowing = ref(true)
 </script>
 
 <template>
-  <section class="min-h-screen bg-slate-800 relative flex flex-col justify-between pb-16 md:pb-24">
-    <div class="absolute inset-0 bg-gradient-to-r from-slate-800 to-transparent z-10" />
-    <div class="absolute inset-0 bg-no-repeat bg-cover bg-center opacity-75" style="background-image: url('/bg2.jpg');" />
-
-    <header class="px-10 h-32 flex items-center justify-between relative z-10">
+  <section class="min-h-screen bg-slate-800 relative flex flex-col justify-between pb-12">
+    <header class="px-10 h-32 flex items-center justify-between relative z-20">
       <img src="/logo.svg" class="w-32" />
       <!-- <button class="border-teal-500 border px-6 py-2 text-teal-500 text-sm">Msg me</button> -->
     </header>
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-800 to-transparent z-10" />
+    <TransitionRoot
+      appear
+      :show="isShowing"
+    >
+      <TransitionChild
+        enter="transition-all duration-500"
+        enter-from="opacity-0"
+        enter-to="opacity-100"
+        leave="transition-opacity duration-150"
+        leave-from="opacity-100"
+        leave-to="opacity-0"
+      >
+        <div class="absolute inset-0 bg-no-repeat bg-cover bg-center opacity-75" style="background-image: url('/bg2.jpg');" />
+      </TransitionChild>
+    </TransitionRoot>
 
     <div class="relative z-20 container mx-auto text-white space-y-12 p-6">
       <TransitionRoot
@@ -63,8 +76,19 @@ const isShowing = ref(true)
             </div>
           </TransitionChild>
 
+          <TransitionChild
+            enter="transition-all duration-500 delay-300"
+            enter-from="opacity-0 translate-y-2"
+            enter-to="opacity-100 scale-100"
+            leave="transition-opacity duration-150"
+            leave-from="opacity-100"
+            leave-to="opacity-0"
+          >
+            <p class="text-slate-500 text-sm mt-20">2022 &copy; No frameworks were harmed in the making of this site.</p>
+          </TransitionChild>
         </div>
       </TransitionRoot>
+      
     </div>
   </section>
 </template>
