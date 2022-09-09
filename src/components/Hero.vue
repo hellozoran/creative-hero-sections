@@ -40,9 +40,9 @@ const isShowing = ref(true)
           leave-from="opacity-100"
           leave-to="opacity-0"
         >
-          <p class="text-lg md:text-2xl font-medium mt-4 text-slate-500">Javascript, Vue, Nuxt, React Native, Node.js</p>
+          <p class="text-lg md:text-2xl font-medium mt-4 text-teal-500">Javascript, Vue, Nuxt, React Native, Node.js</p>
           <p class="text-base md:text-xl max-w-2xl mt-8">
-            In my spare time, I play and record music and build tube amps from scratch, some furniture and occasionally write firmware for micro controller projects.
+            I love building clean, performant software. In my spare time, I play and record music and handwire tube amps from scratch. A single ended version of a Bassman anyone? I also enjoy writing firmware for micro controller projects.
           </p>
         </TransitionChild>
 
@@ -57,7 +57,7 @@ const isShowing = ref(true)
           >
             <h3 class="font-bold text-xl text-slate-500">Recent works</h3>
             <div class="mt-2 flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-8">
-              <img src="../assets/logo-vetster.svg" class="w-40" />
+              <img src="../assets/logo-vetster.svg" class="w-36" />
               <img src="../assets/logo-terminal.svg" class="w-40" />
               <img src="../assets/logo-hove.svg" class="w-40" />
             </div>
