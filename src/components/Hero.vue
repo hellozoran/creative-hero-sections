@@ -15,7 +15,7 @@ window.onload = function () {
     h;
   fitCanvas();
   
-  let mouse = {x: w/2, y: h/4},
+  let mouse = {x: w/2, y: h/2},
       last_mouse = {};
   
   function curcumicenter(A,B,C){
