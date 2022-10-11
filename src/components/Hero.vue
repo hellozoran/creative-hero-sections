@@ -46,7 +46,7 @@ const isShowing = ref(true)
               Javascript
             </span>
             <span class="mt-2 inline-block font-bold uppercase text-transparent text-5xl md:text-8xl bg-clip-text bg-gradient-to-br from-purple-500 to-pink-600">
-              Software<br />
+              Frontend<br />
               Engineer
             </span>
           </h1>
