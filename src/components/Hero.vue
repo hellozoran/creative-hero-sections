@@ -2,6 +2,8 @@
 import { ref } from 'vue'
 import { TransitionRoot, TransitionChild } from '@headlessui/vue'
 import Logo from './Logo.vue';
+import GitHubIcon from './GitHubIcon.vue';
+import LinkedInIcon from './LinkedInIcon.vue';
 
 const isShowing = ref(true)
 </script>
@@ -60,41 +62,27 @@ const isShowing = ref(true)
           leave-to="opacity-0"
         >
           <p class="text-lg md:text-2xl font-medium mt-4 text-teal-400">
-            Vue, Nuxt, React Native, Node.js
+            Vue, Nuxt, React Native, Node.js, TailwindCSS, SCSS
           </p>
           <p class="text-base max-w-xl mx-auto mt-8">
-            I love building clean, performant software. In my spare time, I play and record music and handwire tube amps from scratch. I also enjoy writing firmware for micro controller projects.
+            Self starter. Motivated AF. Wearer of any hat necessary. I prefer to work with early stage startups, because building something from the ground up is rewarding work for me and I thoroughly enjoy my contributions.
           </p>
+          <p class="text-base max-w-xl mx-auto mt-8">
+            In my free time, I hand wire tube guitar amps and play and record music. Once in a while I'll build an arduino hardware controller and write some firmware to make my life easier.
+          </p>
+          <ul class="flex items-center justify-center space-x-6 md:space-x-3 mt-12 text-white">
+            <li>
+              <a href="https://github.com/hellozoran" class="text-teal-400 hover:text-teal-600 transition-colors duration-150">
+                <GitHubIcon class="w-12 h-12" />
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/zoranem/" class="text-teal-400 hover:text-teal-600 transition-colors duration-150">
+                <LinkedInIcon class="w-12 h-12" />
+              </a>
+            </li>
+          </ul>
         </TransitionChild>
-
-        <!-- <div class="mt-12 hidden md:block">
-          <TransitionChild
-            enter="transition-all duration-300 delay-300"
-            enter-from="opacity-0 translate-y-2"
-            enter-to="opacity-100 scale-100"
-            leave="transition-opacity duration-150"
-            leave-from="opacity-100"
-            leave-to="opacity-0"
-          >
-            <h3 class="font-bold text-xl text-slate-500">Recent works</h3>
-            <div class="mt-2 flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-8">
-              <img src="../assets/logo-vetster.svg" class="w-36" />
-              <img src="../assets/logo-terminal.svg" class="w-40" />
-              <img src="../assets/logo-hove.svg" class="w-40" />
-            </div>
-          </TransitionChild>
-
-          <TransitionChild
-            enter="transition-all duration-500 delay-300"
-            enter-from="opacity-0 translate-y-2"
-            enter-to="opacity-100 scale-100"
-            leave="transition-opacity duration-150"
-            leave-from="opacity-100"
-            leave-to="opacity-0"
-          >
-            <p class="text-slate-500 text-sm mt-20">2022 &copy; No frameworks were harmed in the making of this site.</p>
-          </TransitionChild>
-        </div> -->
       </TransitionRoot>
       
     </div>
