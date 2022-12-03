@@ -1,7 +1,15 @@
 <script setup>
-import Hero from './components/Hero.vue'
+import ZeeHero from './components/ZeeHero.vue'
+import ZeeHeader from './components/ZeeHeader.vue'
+import ZeeTech from './components/ZeeTech.vue'
+import ZeePortfolio from './components/ZeePortfolio.vue'
+import ZeeAbout from './components/ZeeAbout.vue'
 </script>
 
 <template>
-  <Hero />
+  <ZeeHeader />
+  <ZeeHero />
+  <ZeeTech />
+  <ZeePortfolio />
+  <ZeeAbout />
 </template>
