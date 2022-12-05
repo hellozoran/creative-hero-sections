@@ -7,11 +7,14 @@ const props = defineProps({
 
 <template>
   <div class="aspect-square relative border-b border-slate-800 flex items-center justify-center mx-3 md:mx-6">
-    <div class="absolute z-40 md:left-0 md:-translate-x-8 lg:-translate-x-16 xl:-translate-x-32 max-w-sm">
-      <h1 class="text-center md:text-left font-bold text-2xl sm:text-6xl md:text-7xl lg:text-8xl leading-tight" style="text-shadow: 1px 1px 2px black; line-height: 0.9;">
+    <div class="absolute z-40 md:left-0 md:-translate-x-8 lg:-translate-x-16 xl:-translate-x-32 max-w-sm pointer-events-none">
+      <h1
+        class="text-center md:text-left font-bold text-2xl sm:text-6xl md:text-7xl lg:text-8xl leading-tight"
+        style="text-shadow: 1px 1px 2px black; line-height: 0.9;"
+      >
         Frontend engineer
       </h1>
-      <p class="mt-4 md:mt-8 text-sm md:text-lg text-center md:text-left">
+      <p class="mt-4 md:mt-8 text-sm md:text-lg text-center md:text-left" style="text-shadow: 1px 1px 2px black;">
         <span class="font-bold">JavaScript developer.</span> Vue.js, Nuxt.js, Node.js, Express.js, TailwindCSS, Prisma, GraphQL, Postgres, MongoDB, Anime.js, Vite.
       </p>
     </div>

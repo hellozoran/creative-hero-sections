@@ -1,5 +1,5 @@
 <template>
-  <section class="max-w-3xl lg:max-w-5xl mx-auto px-8 py-12 grid lg:grid-cols-2 gap-8 ">
+  <section class="max-w-3xl lg:max-w-5xl mx-auto px-8 mt-12 grid lg:grid-cols-2 gap-8">
     <div>
       <h2 class="font-bold text-xl md:text-3xl">Engineering</h2>
       <p class="mt-2 text-slate-400 text-sm lg:text-base">
