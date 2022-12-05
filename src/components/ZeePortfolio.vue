@@ -111,7 +111,7 @@ function createSlider() {
 </script>
 
 <template>
-  <h2 class="mx-auto text-center text-slate-100 text-4xl font-bold">Recent work highlights</h2>
+  <h2 class="mt-16 mx-auto text-center text-slate-100 text-3xl font-bold">Recent work highlights</h2>
   <main class="sliders-container relative flex items-center justify-center flex-1 py-24 text-white" ref="slider" />
   <ul class="pagination pb-24 mx-auto flex justify-center">
       <li v-for="index in slides" :key="index" class="pagination__item">

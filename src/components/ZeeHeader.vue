@@ -13,9 +13,10 @@ function toggleMedia() {
 }
 </script>
 <template>
-  <header class="flex items-center justify-between relative h-24">
-    <Logo class="w-20 text-teal-400 ml-6" />
-    <div 
+  <header class="flex items-center justify-between h-24 fixed top-0 w-full backdrop-blur-lg z-50">
+    <Logo class="w-16 lg:w-24 text-emerald-500 ml-6" />
+    <!-- <img src="/z.svg" class="w-24 ml-6" /> -->
+    <!-- <div 
       :class="[ isOpen ? 'w-1/3' : 'w-24' ]"
       class="flex items-center justify-start border-l border-b border-slate-800 h-24 hover:bg-black/25 transition-all duration-200 fixed top-0 right-0 z-50"
       style="background-color: #181C27">
@@ -69,9 +70,9 @@ function toggleMedia() {
 
       <button @click="toggleMedia" class="w-24 h-24 flex items-center justify-center absolute top-0 right-0">
         <ArrowUpRightIcon
-          :class="{ 'rotate-360': isOpen }"
+          :class="{ 'rotate-360 text-teal-400': isOpen }"
           class="w-8 text-slate-100 transition-transform duration-200" />
       </button>
-    </div>
+    </div> -->
   </header>
 </template>

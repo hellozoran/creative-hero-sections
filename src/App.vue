@@ -10,6 +10,6 @@ import ZeeAbout from './components/ZeeAbout.vue'
   <ZeeHeader />
   <ZeeHero />
   <ZeeTech />
-  <ZeePortfolio />
-  <ZeeAbout />
+  <!-- <ZeePortfolio /> -->
+  <!-- <ZeeAbout /> -->
 </template>
