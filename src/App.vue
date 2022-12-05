@@ -13,5 +13,5 @@ import ZeeAbout from './components/ZeeAbout.vue'
   <ZeeTech />
   <!-- <ZeePortfolio /> -->
   <!-- <ZeeAbout /> -->
-  <ZeeFooter />
+  <!-- <ZeeFooter /> -->
 </template>

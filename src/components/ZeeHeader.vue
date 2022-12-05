@@ -14,8 +14,12 @@ function toggleMedia() {
   <header class="flex items-center justify-between h-20 lg:h-24 fixed top-0 w-full backdrop-blur-lg z-50 px-6">
     <Logo class="w-16 lg:w-24 text-emerald-500" />
     <div class="flex gap-4 ">
-      <GitHubIcon />
-      <LinkedInIcon />
+      <!-- <a href="#" target="_blank">
+        <GitHubIcon />
+      </a> -->
+      <a href="https://www.linkedin.com/in/zoranem/" target="_blank" class="text-slate-200">
+        <LinkedInIcon />
+      </a>
     </div>
   </header>
 </template>
