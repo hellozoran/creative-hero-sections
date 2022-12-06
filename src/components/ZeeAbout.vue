@@ -1,5 +1,5 @@
 <template>
-  <section class="mt-24 px-8 mx-auto max-w-3xl flex items-center gap-8">
+  <section class="mt-16 px-8 mx-auto max-w-3xl flex items-center gap-8">
     <div class="w-40 h-40 bg-green-200 rounded-full shrink-0" />
     <div>
       <h2 class="font-bold text-lg md:text-2xl">About me</h2>

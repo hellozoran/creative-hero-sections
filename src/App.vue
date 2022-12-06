@@ -1,17 +1,19 @@
 <script setup>
 import ZeeHero from './components/ZeeHero.vue'
 import ZeeHeader from './components/ZeeHeader.vue'
-import ZeeFooter from './components/ZeeFooter.vue'
+import ContactForm from './components/ContactForm.vue'
 import ZeeTech from './components/ZeeTech.vue'
-import ZeePortfolio from './components/ZeePortfolio.vue'
+import ZeeWorks from './components/ZeeWorks.vue'
 import ZeeAbout from './components/ZeeAbout.vue'
+import ZeeFooter from './components/ZeeFooter.vue'
 </script>
 
 <template>
   <ZeeHeader />
   <ZeeHero />
   <ZeeTech />
-  <!-- <ZeePortfolio /> -->
+  <ZeeWorks />
   <!-- <ZeeAbout /> -->
-  <!-- <ZeeFooter /> -->
+  <ContactForm />
+  <ZeeFooter />
 </template>
