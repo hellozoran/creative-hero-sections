@@ -10,15 +10,19 @@ const handleClose = () => {
   isOpen.value = false
 }
 
-const handleOpen = () => {
-  console.log('open sesame')
+const selectedImage = ref('')
+
+function handleOpen(val) {
+  selectedImage.value = val
+  isOpen.value = true
 }
 </script>
+
 <template>
   <section class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 max-w-5xl mx-8 lg:mx-auto mt-16">
-    <ImageThumb v-for="image in images" :key="image" :image="image" @click="isOpen = true" />
+    <ImageThumb v-for="image in images" :key="image" :image="image" @click="handleOpen(image)" />
   </section>
-  <Lightbox :is-open="isOpen" @open="handleOpen" @close="handleClose">
-    <img src="1.webp" />
+  <Lightbox :is-open="isOpen"  @close="handleClose">
+    <img :src="selectedImage" />
   </Lightbox>
 </template>
