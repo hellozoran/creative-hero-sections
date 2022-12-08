@@ -45,7 +45,7 @@ function dismiss() {
     >
       <TransitionChild
         as="div"
-        class="p-8 max-h-screen flex flex-col"
+        class="px-6 py-16 lg:p-24 max-h-screen flex flex-col"
         enter="transition ease-in-out duration-100 transform"
         enter-from="scale-110 opacity-0"
         enter-to="scale-100"
