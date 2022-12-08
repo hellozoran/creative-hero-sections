@@ -77,7 +77,7 @@ onMounted(() => {
   animation: background-change 7s linear infinite;
   padding: 0.5px;
   background-size: 200%;
-  @apply aspect-video relative z-10 w-full grid bg-gradient-to-r from-rose-700 via-violet-500 to-rose-700;
+  @apply aspect-video relative z-0 w-full grid bg-gradient-to-r from-rose-700 via-violet-500 to-rose-700;
   grid-template-columns: repeat(var(--columns), 1fr);
   grid-template-rows: repeat(var(--rows), 1fr);
 }

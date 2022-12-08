@@ -14,6 +14,6 @@ import ZeeFooter from './components/ZeeFooter.vue'
   <ZeeTech />
   <ZeeWorks />
   <!-- <ZeeAbout /> -->
-  <ContactForm />
+  <!-- <ContactForm /> -->
   <ZeeFooter />
 </template>

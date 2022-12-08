@@ -1,8 +1,17 @@
 <script setup>
+import { ref } from 'vue'
 import GitHubIcon from './GitHubIcon.vue'
 import LinkedInIcon from './LinkedInIcon.vue'
 import InputText from './InputText.vue'
 import { ArrowLongRightIcon } from '@heroicons/vue/24/outline'
+
+const data = ref({
+  name: '',
+  email: '',
+  message: '',
+  isProcessing: false,
+  sent: false
+})
 </script>
 
 <template>
