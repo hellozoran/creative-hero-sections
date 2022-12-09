@@ -45,7 +45,7 @@ function dismiss() {
     >
       <TransitionChild
         as="div"
-        class="px-6 py-16 lg:p-24 max-h-screen flex flex-col"
+        class="px-6 py-20 max-h-screen flex flex-col"
         enter="transition ease-in-out duration-100 transform"
         enter-from="scale-110 opacity-0"
         enter-to="scale-100"
@@ -57,9 +57,9 @@ function dismiss() {
       </TransitionChild>
 
       <button
-        class="absolute top-4 right-4 w-10 lg:top-6 lg:right-6 lg:w-12 z-50"
+        class="absolute z-50 p-5 top-0 right-0"
         @click="dismiss">
-        <XMarkIcon />
+        <XMarkIcon class="w-10" />
       </button>
     </TransitionRoot>
   </Teleport>
