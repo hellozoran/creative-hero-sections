@@ -4,6 +4,7 @@ const props = defineProps({
   id: String,
   placeholder: String,
   type: String,
+  disabled: Boolean
 })
 </script>
 
@@ -21,6 +22,7 @@ const props = defineProps({
       :placeholder="placeholder"
       :aria-placeholder="placeholder"
       :type="type"
+      :disabled="disabled"
       class="input-group__input text-base lg:text-lg text-slate-100 w-full rounded-xl px-3 lg:px-4 py-2 lg:py-3 placeholder:text-slate-600 border-2 border-transparent outline-none"
       value=""
     />

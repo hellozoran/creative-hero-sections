@@ -12,7 +12,9 @@ function toggleMedia() {
 </script>
 <template>
   <header class="flex items-center justify-between h-20 lg:h-24 fixed top-0 w-full backdrop-blur-lg z-40 px-6">
-    <Logo class="w-20 lg:w-24 text-emerald-500" />
+    <router-link to="/">
+      <Logo class="w-20 lg:w-24 text-emerald-500" />
+    </router-link>
     <div class="flex gap-4 ">
       <!-- <a href="#" target="_blank">
         <GitHubIcon />
