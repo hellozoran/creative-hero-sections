@@ -1,11 +1,6 @@
 <script setup>
 const props = defineProps({
   label: String,
-  type: {
-    type: String,
-    required: false,
-    default: 'text'
-  },
   required: {
     type: Boolean,
     default: false
@@ -39,11 +34,10 @@ function updateInput(event) {
       <span v-if="required" class="text-violet-400">*</span>
     </label>
 
-    <input
+    <textarea
       :id="id"
       :placeholder="placeholder"
       :aria-placeholder="placeholder"
-      :type="type"
       :disabled="disabled"
       :value="modelValue" 
       class="input-group__input text-base lg:text-lg text-slate-100 w-full rounded-xl px-3 lg:px-4 py-2 lg:py-3 placeholder:text-slate-600 border-2 border-transparent outline-none"
