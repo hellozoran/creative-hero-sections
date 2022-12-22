@@ -1,7 +1,11 @@
 <script setup>
-import Hero from './components/Hero.vue'
+import ZeeHeader from './components/ZeeHeader.vue'
+import ZeeFooter from './components/ZeeFooter.vue'
 </script>
-
 <template>
-  <Hero />
+  <ZeeHeader />
+  <section>
+    <router-view />
+  </section>
+  <ZeeFooter />
 </template>
