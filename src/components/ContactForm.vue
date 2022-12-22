@@ -22,7 +22,8 @@ const submitForm = () => {
     email: email.value,
     message: message.value
   })
-    .then((res) => { 
+    .then((res) => {
+      console.log(res.data)
       isSubmitting.value = false
       isSubmitted.value = true
       clearForm()
