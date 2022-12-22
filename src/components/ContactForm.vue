@@ -42,7 +42,7 @@ function clearForm() {
     <div>
       <h3 class="font-bold text-xl lg:text-2xl">Say hello!</h3>
       <p class="mt-2 text-slate-400 text-sm lg:text-base">
-        I'm open to new projects and I love to build. Feel free to get in touch about a project or just to say hello and connect.
+        I'm open to new projects and I love to build. Feel free to get in touch about something you're working on, or just to say hello and connect!
       </p>
     </div>
     <div 
