@@ -1,12 +1,11 @@
-import fetch from 'node-fetch'
+import axios from 'axios'
 
 const API_ENDPOINT = 'https://catfact.ninja/fact'
 
 export async function handler(event, context) {
   let response
   try {
-    response = await fetch(API_ENDPOINT)
-    // handle response
+    response = await axios.get(API_ENDPOINT)
   } catch (err) {
     return {
       statusCode: err.statusCode || 500,
@@ -18,8 +17,6 @@ export async function handler(event, context) {
 
   return {
     statusCode: 200,
-    body: JSON.stringify({
-      data: response
-    })
+    body: JSON.stringify(response.data)
   }
 }
