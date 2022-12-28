@@ -10,6 +10,9 @@ module.exports = {
         '360': '360deg'
       }
     },
+    fontFamily: {
+      'sans': ['Roboto', 'system-ui']
+    }
   },
   plugins: [],
 }
