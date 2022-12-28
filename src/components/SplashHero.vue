@@ -3,7 +3,7 @@ import { TransitionRoot, TransitionChild } from '@headlessui/vue'
 </script>
 
 <template>
-  <section class="grid place-content-center text-center px-12 pt-40 lg:pt-64 pb-32 lg:pb-44">
+  <section class="grid place-content-center text-center px-12 pt-40 lg:pt-64 pb-32 lg:pb-44 min-h-screen">
     <TransitionRoot
       appear
       :show="true"
