@@ -26,9 +26,9 @@ import { TransitionRoot, TransitionChild } from '@headlessui/vue'
         leave="transition-opacity duration-150"
         leave-from="opacity-100"
         leave-to="opacity-0">
-        <div class="font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-pink-500 text-3xl lg:text-7xl transform -translate-y-6 lg:-translate-y-16 text-center max-w-sm lg:max-w-4xl mx-auto">
+        <h1 class="font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-pink-500 text-3xl lg:text-7xl transform -translate-y-6 lg:-translate-y-16 text-center max-w-sm lg:max-w-4xl mx-auto">
           I'm Zoran. Frontend Engineer, part designer.
-        </div>
+        </h1>
       </TransitionChild>
       <TransitionChild
         enter="transition-all duration-500 delay-500"
