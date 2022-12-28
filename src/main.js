@@ -3,6 +3,7 @@ import axios from 'axios'
 import router from './router/index'
 import App from './App.vue'
 import './index.css'
+import './assets/css/app.css'
 
 axios.defaults.baseURL = import.meta.env.VITE_API_BASEURL
 

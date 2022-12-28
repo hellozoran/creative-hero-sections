@@ -5,7 +5,7 @@ import LinkedInIcon from './LinkedInIcon.vue'
 import InputText from './InputText.vue'
 import InputTextarea from './InputTextarea.vue'
 import { ArrowLongRightIcon, RocketLaunchIcon } from '@heroicons/vue/24/outline'
-
+import DopeButton from './DopeButton.vue'
 const $api = inject('$api')
 const name = ref('')
 const email = ref('')
@@ -39,7 +39,7 @@ function clearForm() {
 </script>
 
 <template>
-  <div class="mt-20 max-w-xl mx-8 sm:mx-auto bg-black/20 rounded-2xl px-8 py-12 space-y-6 lg:space-y-7">
+  <div class="space-y-6 lg:space-y-7">
     <div>
       <h3 class="font-bold text-xl lg:text-2xl">Say hello!</h3>
       <p class="mt-2 text-slate-400 text-sm lg:text-base">
@@ -86,10 +86,9 @@ function clearForm() {
         :disabled="isSubmitted"
       />
 
-      <button :disabled="isSubmitting" class="border-teal-500 border-2 w-full rounded-xl p-3 uppercase font-semibold flex gap-2 items-center justify-center text-xs lg:text-base tracking-wide" type="submit">
+      <DopeButton :disabled="isSubmitting" type="submit">
         Send inquiry
-        <ArrowLongRightIcon class="w-6" />
-      </button>
+      </DopeButton>
     </form>
   </div>
 </template>

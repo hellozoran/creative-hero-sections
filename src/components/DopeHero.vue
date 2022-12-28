@@ -6,7 +6,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <div class="aspect-square relative border-b border-slate-800 flex items-center justify-center mx-3 md:mx-6">
+  <div class="min-h-screen border-b border-slate-800 flex items-center justify-center mx-3 md:mx-6">
     <div class="absolute z-20 md:left-0 md:-translate-x-8 lg:-translate-x-16 xl:-translate-x-32 max-w-sm pointer-events-none">
       <h1
         class="text-center md:text-left font-bold text-2xl sm:text-6xl md:text-7xl lg:text-8xl leading-tight"
