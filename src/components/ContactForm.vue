@@ -1,29 +1,42 @@
 <script setup>
-import { ref, inject, onMounted } from 'vue'
-import GitHubIcon from './GitHubIcon.vue'
-import LinkedInIcon from './LinkedInIcon.vue'
+import { ref, reactive, inject } from 'vue'
+import { useVuelidate } from '@vuelidate/core'
+import { required, email } from '@vuelidate/validators'
+import { RocketLaunchIcon } from '@heroicons/vue/24/outline'
 import InputText from './InputText.vue'
 import InputTextarea from './InputTextarea.vue'
-import { ArrowLongRightIcon, RocketLaunchIcon } from '@heroicons/vue/24/outline'
 import DopeButton from './DopeButton.vue'
+
 const $api = inject('$api')
-const name = ref('')
-const email = ref('')
-const message = ref('')
 const isSubmitting = ref(false)
 const isSubmitted = ref(false)
+const errorMessage = ref('')
 
-const submitForm = () => {
-  if (!name.value || !email.value || !message.value) return
+const state = reactive({
+  name: '',
+  email: '',
+  message: ''
+})
+
+const rules = {
+  name: { required },
+  email: { required, email },
+  message: { required }
+}
+
+const v$ = useVuelidate(rules, state)
+
+async function submitForm() {
+  const result = await v$.value.$validate()
+  if (!result) {
+    errorMessage.value = 'Please check all fields are correct.'
+    return
+  }
+  errorMessage.value = ''
   isSubmitting.value = true
 
-  $api.post('/send', {
-    name: name.value,
-    email: email.value,
-    message: message.value
-  })
+  $api.post('/send', state)
     .then((res) => {
-      console.log(res.data)
       isSubmitting.value = false
       isSubmitted.value = true
       clearForm()
@@ -32,9 +45,9 @@ const submitForm = () => {
 }
 
 function clearForm() {
-  name.value = ''
-  email.value = ''
-  message.value = ''
+  state.name = ''
+  state.email = ''
+  state.message = ''
 }
 </script>
 
@@ -50,7 +63,7 @@ function clearForm() {
       v-if="isSubmitted" 
       class="border-teal-400 border-2 rounded-lg p-10 grid place-content-center">
       <RocketLaunchIcon class="w-10 mx-auto text-teal-400" />
-      <p class="mt-3">
+      <p class="mt-3 text-center">
         Thank you for your message. I will be in touch shortly.
       </p>
     </div>
@@ -62,28 +75,29 @@ function clearForm() {
       ref="contactForm"
       @submit.prevent="submitForm"
     >
+      <p v-if="errorMessage" class="bg-violet-500 p-2 text-sm rounded-sm">{{ errorMessage }}</p>
       <InputText
-        v-model="name"
+        v-model="state.name"
+        :disabled="isSubmitting"
         label="Your name"
         placeholder="Enter your name"
         required
         type="text"
-        :disabled="isSubmitting"
       />
       <InputText 
-        v-model="email"
+        v-model="state.email"
+        :disabled="isSubmitting"
         label="Your email"
         placeholder="Enter your email"
         type="email"
         required
-        :disabled="isSubmitting"
       />
       <InputTextarea
-        v-model="message"
+        v-model="state.message"
+        :disabled="isSubmitted"
         label="Message"
         required
         placeholder="Add a message"
-        :disabled="isSubmitted"
       />
 
       <DopeButton :disabled="isSubmitting" type="submit">
