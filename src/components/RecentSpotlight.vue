@@ -1,9 +1,21 @@
 <script setup>
+import { ref, onMounted } from 'vue'
 import DopeButton from './DopeButton.vue'
+import MomentumSlider from 'momentum-slider'
+const slider = ref(null)
+
+const projects = [
+  { title: 'Moonbeam', text: 'Hiiii', image: '' },
+  { title: 'Ghostbyte', text: 'Killin them softly.', image: '' }
+]
+
+// onMounted(async () => {
+//   createSlider()
+// })
 </script>
 
 <template>
-  <section class="py-12 lg:py-24 grid lg:grid-cols-2 gap-24 max-w-md lg:max-w-6xl mx-auto px-6 items-center">
+  <section class="pt-12 grid lg:grid-cols-2 gap-24 max-w-md lg:max-w-6xl mx-auto px-6 items-center">
     <div class="lg:pb-32">
       <span class="uppercase text-slate-600 tracking-widest block text-xs lg:text-base">Recent work</span>
       <h2 class="font-black text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-pink-500 inline-block text-2xl lg:text-4xl mt-2 lg:mt-4">Moonbeam</h2>
