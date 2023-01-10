@@ -14,7 +14,9 @@ const props = defineProps({
     <div class="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-b from-[#181C27] via-[#181C27] to-rose-800/25" />
     <div class="bg-gradient-to-r from-[#181C27] to-[#181C27]/0 w-64 absolute left-0 top-0 h-full" />
     <div class="bg-gradient-to-r from-[#181C27]/0 to-[#181C27] w-64 absolute right-0 top-0 h-full" />
-    <img :src="image" class="absolute left-1/2 z-10 bottom-1/2 translate-y-1/2 -translate-x-1/2 pointer-events-none h-3/4" />
+    <div class="absolute inset-0 flex items-center justify-center">
+      <img :src="image" class="h-1/2 md:h-2/3 lg:h-full z-20" />
+    </div>
     <DopeGrid />
   </div>
 </template>

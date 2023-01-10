@@ -9,7 +9,7 @@ function toggleMedia() {
 }
 </script>
 <template>
-  <header class="flex items-center justify-between h-20 lg:h-24 fixed top-0 w-full backdrop-blur-lg z-40 px-6 lg:px-10">
+  <header class="flex items-center justify-between h-20 lg:h-24 fixed top-0 w-full z-40 px-6 lg:px-10">
     <router-link to="/">
       <h1 class="text-slate-100 font-extrabold text-2xl tracking-wide">Zoran.</h1>
     </router-link>
