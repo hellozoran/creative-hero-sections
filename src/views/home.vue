@@ -1,13 +1,9 @@
 <script setup>
-import SplashHero from '../components/SplashHero.vue'
-import RecentSpotlight from '../components/RecentSpotlight.vue'
-import ContactSection from '../components/ContactSection.vue'
-import RecentPosts from '../components/RecentPosts.vue'
+import DopeHero from '../components/DopeHero.vue'
 </script>
 
 <template>
-  <SplashHero />
-  <!-- <RecentSpotlight /> -->
-  <ContactSection />
-  <!-- <RecentPosts /> -->
+  <section class="max-w-5xl mx-auto relative">
+    <DopeHero image="/nikola-tesla.png" />
+  </section>
 </template>

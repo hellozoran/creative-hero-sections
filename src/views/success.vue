@@ -1,3 +1,0 @@
-<template>
-  Thank you.
-</template>

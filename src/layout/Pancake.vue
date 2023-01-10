@@ -8,5 +8,5 @@ import ZeeFooter from '../components/ZeeFooter.vue'
   <section>
     <slot />
   </section>
-  <ZeeFooter />
+  <!-- <ZeeFooter /> -->
 </template>
